@@ -1,0 +1,27 @@
+# gazorby/fish-exa
+functions/exa_git.fish
+conf.d/fish-exa.fish
+
+# jethrokuan/fzf
+functions/__fzf_cd.fish
+functions/__fzf_complete.fish
+functions/__fzf_complete_preview.fish
+functions/__fzf_find_file.fish
+functions/__fzf_get_dir.fish
+functions/__fzf_open.fish
+functions/__fzf_parse_commandline.fish
+functions/__fzf_reverse_isearch.fish
+functions/__fzfcmd.fish
+conf.d/fzf.fish
+
+# oh-my-fish/plugin-grc
+functions/grc.wrap.fish
+conf.d/grc.fish
+
+# jorgebucaran/autopair.fish
+functions/_autopair_backspace.fish
+functions/_autopair_insert_left.fish
+functions/_autopair_insert_right.fish
+functions/_autopair_insert_same.fish
+functions/_autopair_tab.fish
+conf.d/autopair.fish
