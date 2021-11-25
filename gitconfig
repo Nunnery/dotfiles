@@ -27,3 +27,6 @@
 
 [credential]
   helper = osxkeychain
+[user]
+	name = Richard Harrah
+	email = topplethenunnery@gmail.com
