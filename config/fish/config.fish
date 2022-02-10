@@ -10,3 +10,7 @@ if test -z (pgrep ssh-agent | string collect)
     set -Ux SSH_AUTH_SOCK $SSH_AUTH_SOCK
     set -Ux SSH_AGENT_PID $SSH_AGENT_PID
 end
+
+set -gx VOLTA_HOME "$HOME/.volta"
+set -gx PATH "$VOLTA_HOME/bin" $PATH
+set -gx PATH "$HOME/.cargo/bin" $PATH
