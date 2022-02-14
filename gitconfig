@@ -1,5 +1,8 @@
-[includeIf "gitdir:~/work/"]
-  path = ~/.gitconfig-work
+[includeIf "gitdir:~/singlestone/"]
+  path = ~/.gitconfig-singlestone
+
+[includeIf "gitdir:~/nirvana/"]
+  path = ~/.gitconfig-nirvana
 
 [init]
   defaultBranch = main
