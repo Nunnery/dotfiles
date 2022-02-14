@@ -13,4 +13,12 @@ end
 
 set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
+
 set -gx PATH "$HOME/.cargo/bin" $PATH
+
+set -gx PATH "$HOME/.jenv/bin" $PATH
+
+set -gx GOPATH $HOME/go
+set -gx PATH "$GOPATH/bin" $PATH
+
+status --is-interactive; and source (jenv init -|psub)

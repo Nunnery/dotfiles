@@ -1,7 +1,7 @@
 [includeIf "gitdir:~/singlestone/"]
   path = ~/.gitconfig-singlestone
 
-[includeIf "gitdir:~/nirvana/"]
+[includeIf "gitdir:~/nirvana_tech/"]
   path = ~/.gitconfig-nirvana
 
 [init]
