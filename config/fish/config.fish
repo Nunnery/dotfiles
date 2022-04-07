@@ -18,7 +18,13 @@ set -gx PATH "$HOME/.cargo/bin" $PATH
 
 set -gx PATH "$HOME/.jenv/bin" $PATH
 
+set -gx PATH "$HOME/.local/bin" $PATH
+
 set -gx GOPATH $HOME/go
 set -gx PATH "$GOPATH/bin" $PATH
 
 status --is-interactive; and source (jenv init -|psub)
+
+if test -e ~/.config/fish/config.fish.local
+    source ~/.config/fish/config.fish.local
+end
