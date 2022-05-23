@@ -20,6 +20,8 @@ set -gx PATH "$HOME/.jenv/bin" $PATH
 
 set -gx PATH "$HOME/.local/bin" $PATH
 
+set -gx PATH "$HOME/bin" $PATH
+
 set -gx GOPATH $HOME/go
 set -gx PATH "$GOPATH/bin" $PATH
 
