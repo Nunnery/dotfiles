@@ -33,5 +33,5 @@
 [includeIf "gitdir:~/singlestone/"]
   path = ~/.gitconfig-singlestone
 
-[includeIf "gitdir:~/nirvana_tech/"]
-  path = ~/.gitconfig-nirvana
+[push]
+	autoSetupRemote = true

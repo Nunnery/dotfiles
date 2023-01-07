@@ -17,5 +17,11 @@ antigen apply
 
 [[ -f ~/.aliases ]] && source ~/.aliases
 [[ -f ~/.functions ]] && source ~/.functions
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 eval "$(starship init zsh)"
+
+# pnpm
+export PNPM_HOME="$HOME/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
