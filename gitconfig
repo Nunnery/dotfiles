@@ -30,8 +30,11 @@
 [url "https://"]
 	insteadOf = git://
 
-[includeIf "gitdir:~/singlestone/"]
+[includeIf "gitdir:~/github/singlestone/"]
   path = ~/.gitconfig-singlestone
+
+[includeIf "gitdir:~/github/VeteranCrowd/"]
+  path = ~/.gitconfig-veterancrowd
 
 [push]
 	autoSetupRemote = true
