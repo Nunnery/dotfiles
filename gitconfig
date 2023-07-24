@@ -36,5 +36,8 @@
 [includeIf "gitdir:~/github/VeteranCrowd/"]
   path = ~/.gitconfig-veterancrowd
 
+[includeIf "gitdir:~/gitlab/evergreen-money/"]
+  path = ~/.gitconfig-evergreen-money
+
 [push]
 	autoSetupRemote = true
