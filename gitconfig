@@ -39,6 +39,9 @@
 [includeIf "gitdir:~/evergreen-money/"]
   path = ~/.gitconfig-evergreen-money
 
+[includeIf "gitdir:~/github/money-evergreen/"]
+  path = ~/.gitconfig-singlestone
+
 [push]
 	autoSetupRemote = true
 
