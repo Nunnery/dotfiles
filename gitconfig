@@ -27,9 +27,6 @@
 	name = Richard Harrah
 	email = topplethenunnery@gmail.com
 
-[url "https://"]
-	insteadOf = git://
-
 [includeIf "gitdir:~/github/singlestone/"]
   path = ~/.gitconfig-singlestone
 
@@ -40,7 +37,7 @@
   path = ~/.gitconfig-evergreen-money
 
 [includeIf "gitdir:~/github/money-evergreen/"]
-  path = ~/.gitconfig-singlestone
+  path = ~/.gitconfig-evergreen-money
 
 [push]
 	autoSetupRemote = true

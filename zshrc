@@ -1,4 +1,22 @@
-source /usr/local/share/antigen/antigen.zsh
+pupdate() { case ":${PATH:=$1}:" in *:$1:*) ;; *) PATH="$1:$PATH" ;; esac; }
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+source "$HOME/.cargo/env"
+
+export GOPATH="$HOME/go"
+export VOLTA_HOME="$HOME/.volta"
+export PNPM_HOME="$HOME/Library/pnpm"
+
+pupdate "$VOLTA_HOME/bin"
+pupdate "$HOME/.cargo/bin"
+pupdate "$HOME/.local/bin"
+pupdate "$HOME/bin"
+pupdate "$GOPATH/bin"
+pupdate "$PNPM_HOME"
+pupdate "$HOME/.dotnet/tools"
+
+source $HOMEBREW_PREFIX/share/antigen/antigen.zsh
 
 # Generic ZSH bundles
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -13,15 +31,10 @@ antigen bundle jenv
 antigen bundle ssh-agent
 antigen bundle zoxide
 
-antigen apply
-
 [[ -f ~/.aliases ]] && source ~/.aliases
 [[ -f ~/.functions ]] && source ~/.functions
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
-eval "$(starship init zsh)"
+antigen apply
 
-# pnpm
-export PNPM_HOME="$HOME/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-# pnpm end
+eval "$(starship init zsh)"
