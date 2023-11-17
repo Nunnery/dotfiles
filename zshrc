@@ -41,3 +41,5 @@ eval "$(starship init zsh)"
 
 source "$(brew --prefix asdf)/libexec/asdf.sh"
 source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+source <(pkgx --shellcode)  #docs.pkgx.sh/shellcode
