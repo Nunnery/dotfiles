@@ -30,15 +30,6 @@
 [includeIf "gitdir:~/github/singlestone/"]
   path = ~/.gitconfig-singlestone
 
-[includeIf "gitdir:~/github/VeteranCrowd/"]
-  path = ~/.gitconfig-veterancrowd
-
-[includeIf "gitdir:~/evergreen-money/"]
-  path = ~/.gitconfig-evergreen-money
-
-[includeIf "gitdir:~/github/money-evergreen/"]
-  path = ~/.gitconfig-evergreen-money
-
 [push]
 	autoSetupRemote = true
 
